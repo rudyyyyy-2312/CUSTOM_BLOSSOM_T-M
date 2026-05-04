@@ -27,9 +27,9 @@ try {
 }
 
 /* ---------- env-driven constants ---------- */
-const LOGO_SRC    = '/images/logo.jpg';
-const FALLBACK_IMG = '/images/logo.jpg';
-const isImagePath = (path) => typeof path === 'string' && (path.startsWith('http') || path.startsWith('/images/'));
+const LOGO_SRC    = 'images/logo.jpg';
+const FALLBACK_IMG = 'images/logo.jpg';
+const isImagePath = (path) => typeof path === 'string' && (path.startsWith('http') || path.startsWith('images/'));
 const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const PRICING_CONFIG = {
             tiers: {
@@ -208,18 +208,18 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
             ],
         };
         const THEMES = [
-            { id: 'anime', name: 'Anime', icon: '/images/quiet_sunset_anime.png', colors: ['#FF6B6B', '#4ECDC4', '#FFE66D'], tag: 'Fan Favourites', mood: 'Bold & Expressive' },
-            { id: 'marvel', name: 'Marvel', icon: '/images/theme_marvel.png', colors: ['#E63946', '#F1FAEE', '#A8DADC'], tag: 'Superhero Edition', mood: 'Bold & Powerful' },
-            { id: 'cars', name: 'Cars', icon: '/images/theme_cars_new.png', colors: ['#2B2D42', '#8D99AE', '#EDF2F4'], tag: 'Speed & Style', mood: 'Sleek & Dynamic' },
-            { id: 'mandala', name: 'Mandala', icon: '/images/theme_mandala_new.webp', colors: ['#606C38', '#283618', '#FEFAE0'], tag: 'Sacred Geometry', mood: 'Calm & Intricate' },
-            { id: 'floral', name: 'Floral', icon: '/images/theme_floral_new.jpg', colors: ['#FFC8DD', '#FFAFCC', '#BDE0FE'], tag: 'Nature in Bloom', mood: 'Soft & Romantic' },
-            { id: 'disney', name: 'Disney', icon: '/images/theme_disney_new.jpg', colors: ['#B7094C', '#A01A58', '#892B64'], tag: 'Magic Collection', mood: 'Enchanting & Pure' },
+            { id: 'anime', name: 'Anime', icon: 'images/quiet_sunset_anime.png', colors: ['#FF6B6B', '#4ECDC4', '#FFE66D'], tag: 'Fan Favourites', mood: 'Bold & Expressive' },
+            { id: 'marvel', name: 'Marvel', icon: 'images/theme_marvel_new.jpg', colors: ['#E63946', '#F1FAEE', '#A8DADC'], tag: 'Superhero Edition', mood: 'Bold & Powerful' },
+            { id: 'cars', name: 'Cars', icon: 'images/theme_cars_new.png', colors: ['#2B2D42', '#8D99AE', '#EDF2F4'], tag: 'Speed & Style', mood: 'Sleek & Dynamic' },
+            { id: 'mandala', name: 'Mandala', icon: 'images/theme_mandala_new.webp', colors: ['#606C38', '#283618', '#FEFAE0'], tag: 'Sacred Geometry', mood: 'Calm & Intricate' },
+            { id: 'floral', name: 'Floral', icon: 'images/theme_floral_new.jpg', colors: ['#FFC8DD', '#FFAFCC', '#BDE0FE'], tag: 'Nature in Bloom', mood: 'Soft & Romantic' },
+            { id: 'disney', name: 'Disney', icon: 'images/theme_disney_new.jpg', colors: ['#B7094C', '#A01A58', '#892B64'], tag: 'Magic Collection', mood: 'Enchanting & Pure' },
 
         ];
         const BASE_STYLES = [
-            { id: 'matte', name: 'Matte Finish', icon: '/images/icon_pro.png' },
-            { id: 'glossy', name: 'High Gloss', icon: '/images/icon_pro.png' },
-            { id: 'transparent', name: 'Crystal Clear', icon: '/images/icon_easy.png' }
+            { id: 'matte', name: 'Matte Finish', icon: 'images/icon_pro.png' },
+            { id: 'glossy', name: 'High Gloss', icon: 'images/icon_pro.png' },
+            { id: 'transparent', name: 'Crystal Clear', icon: 'images/icon_easy.png' }
         ];
         const PATTERNS = [
             { id: 'none', name: 'Solid Finish', sub: 'Matte Studio Canvas' },
@@ -705,7 +705,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                         {effect === 'gold-plating' && (
                             <div style={{
                                 position: 'absolute', inset: 0, zIndex: 5,
-                                background: 'url("/images/pattern_gold_dust.png"), linear-gradient(135deg, #d4af37, #f9e29c, #d4af37)',
+                                background: 'url("images/pattern_gold_dust.png"), linear-gradient(135deg, #d4af37, #f9e29c, #d4af37)',
                                 mixBlendMode: isMobile ? 'normal' : 'color-burn',
                                 opacity: isMobile ? 0.4 : 0.6, pointerEvents: 'none'
                             }} />
@@ -1002,10 +1002,10 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         /* ——— THEMES GALLERY PAGE ——— */
         const THEME_CATALOG = [
             {
-                id: 'anime', name: 'Anime', emoji: '/images/quiet_sunset_anime.png',
+                id: 'anime', name: 'Anime', emoji: 'images/quiet_sunset_anime.png',
                 tag: 'Fan Favourites', mood: 'Bold & Expressive',
                 accent: '#C084FC', accent2: '#F9A8D4',
-                img: '/images/quiet_sunset_anime.png?v=1',
+                img: 'images/quiet_sunset_anime.png',
                 config: {
                     colors: ['#130a21', '#ff007f', '#00e5ff', '#9d00ff', '#f3f000'],
                     fonts: ['Rajdhani', 'Orbitron'],
@@ -1014,30 +1014,30 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 },
                 productDesigns: {
                     phone: [
-                        { id: 'goku', name: 'Goku', sub: 'Legendary Saiyan', img: '/images/goku.jpg' },
-                        { id: 'itachi', name: 'Itachi', sub: 'Uchiha Legacy', img: '/images/itachi.jpg' },
-                        { id: 'n_and_s', name: 'Naruto & Sasuke', sub: 'Eternal Rivals', img: '/images/n_and_s.jpg' },
-                        { id: 'naruto_multi', name: 'Naruto Sage', sub: 'Six Paths Power', img: '/images/narutoooooooooo.jpg' },
+                        { id: 'goku', name: 'Goku', sub: 'Legendary Saiyan', img: 'images/goku.jpg' },
+                        { id: 'itachi', name: 'Itachi', sub: 'Uchiha Legacy', img: 'images/itachi.jpg' },
+                        { id: 'n_and_s', name: 'Naruto & Sasuke', sub: 'Eternal Rivals', img: 'images/n_and_s.jpg' },
+                        { id: 'naruto_multi', name: 'Naruto Sage', sub: 'Six Paths Power', img: 'images/narutoooooooooo.jpg' },
                     ],
                     earbuds: [
-                        { id: 'akatsuki', name: 'Akatsuki', sub: 'Red Cloud Elite', img: '/images/akatsuki.jpg' },
-                        { id: 'ds', name: 'Demon Slayer', sub: 'Nichirin Sword Guard', img: '/images/ds.jpg' },
-                        { id: 'eren', name: 'Eren Jaeger', sub: 'Attack Titan', img: '/images/eren_jaeger.jpg' },
-                        { id: 'anime_gear', name: 'Anime Gear', sub: 'Limited Edition', img: '/images/anime_gear.jpg' },
+                        { id: 'akatsuki', name: 'Akatsuki', sub: 'Red Cloud Elite', img: 'images/akatsuki.jpg' },
+                        { id: 'ds', name: 'Demon Slayer', sub: 'Nichirin Sword Guard', img: 'images/ds.jpg' },
+                        { id: 'eren', name: 'Eren Jaeger', sub: 'Attack Titan', img: 'images/eren_jaeger.jpg' },
+                        { id: 'anime_gear', name: 'Anime Gear', sub: 'Limited Edition', img: 'images/anime_gear.jpg' },
                     ],
                     laptop: [
-                        { id: 'naruto_l', name: 'Naruto', sub: 'Hokage Dreams', img: '/images/naruto.jpg' },
-                        { id: 'sasuke_l', name: 'Sasuke', sub: 'Shadow Shinobi', img: '/images/sasuke.jpg' },
-                        { id: 'tanjiro_l', name: 'Tanjiro', sub: 'Water Breathing', img: '/images/tanjiro.jpg' },
-                        { id: 'zenitsu_l', name: 'Zenitsu', sub: 'Thunder Breathing', img: '/images/zenitsu.jpg' },
+                        { id: 'naruto_l', name: 'Naruto', sub: 'Hokage Dreams', img: 'images/naruto.jpg' },
+                        { id: 'sasuke_l', name: 'Sasuke', sub: 'Shadow Shinobi', img: 'images/sasuke.jpg' },
+                        { id: 'tanjiro_l', name: 'Tanjiro', sub: 'Water Breathing', img: 'images/tanjiro.jpg' },
+                        { id: 'zenitsu_l', name: 'Zenitsu', sub: 'Thunder Breathing', img: 'images/zenitsu.jpg' },
                     ]
                 }
             },
             {
-                id: 'marvel', name: 'Marvel', emoji: '/images/theme_marvel.png?v=1',
+                id: 'marvel', name: 'Marvel', emoji: 'images/theme_marvel_new.jpg',
                 tag: 'Superhero Edition', mood: 'Bold & Powerful',
                 accent: '#E63946', accent2: '#F1FAEE',
-                img: '/images/theme_marvel.png?v=1',
+                img: 'images/theme_marvel_new.jpg',
                 config: {
                     colors: ['#4a0000', '#ed1d24', '#ffd700', '#000000', '#ffffff'],
                     fonts: ['Anton', 'Bangers'],
@@ -1046,30 +1046,30 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 },
                 productDesigns: {
                     phone: [
-                        { id: 'batman', name: 'Batman Noir', sub: 'Gotham Knight', img: '/images/batman.jpg' },
-                        { id: 'captain', name: 'Captain America', sub: 'First Avenger', img: '/images/captain_america.jpg' },
-                        { id: 'ironman_p', name: 'Iron Man', sub: 'Stark Tech', img: '/images/iron_man_phone_case.jpg' },
-                        { id: 'spiderman_p', name: 'Spider-Man', sub: 'Web Slinger', img: '/images/spider_man_phone_case.jpg' },
+                        { id: 'batman', name: 'Batman Noir', sub: 'Gotham Knight', img: 'images/batman.jpg' },
+                        { id: 'captain', name: 'Captain America', sub: 'First Avenger', img: 'images/captain_america.jpg' },
+                        { id: 'ironman_p', name: 'Iron Man', sub: 'Stark Tech', img: 'images/iron_man_phone_case.jpg' },
+                        { id: 'spiderman_p', name: 'Spider-Man', sub: 'Web Slinger', img: 'images/spider_man_phone_case.jpg' },
                     ],
                     earbuds: [
-                        { id: 'avengers', name: 'Avengers', sub: 'Earth\'s Mightiest', img: '/images/avengers.jpg' },
-                        { id: 'marvel_lg', name: 'Marvel Legacy', sub: 'Classic Comic', img: '/images/marvel_legacy.jpg' },
-                        { id: 'ironman_a', name: 'Iron ManPods', sub: 'Arc Reactor', img: '/images/iron_man_airpods.jpg' },
-                        { id: 'spiderman_a', name: 'Spider-Buds', sub: 'Spidey Sense', img: '/images/spiderman_ear_buds.jpg' },
+                        { id: 'avengers', name: 'Avengers', sub: 'Earth\'s Mightiest', img: 'images/avengers.jpg' },
+                        { id: 'marvel_lg', name: 'Marvel Legacy', sub: 'Classic Comic', img: 'images/marvel_legacy.jpg' },
+                        { id: 'ironman_a', name: 'Iron ManPods', sub: 'Arc Reactor', img: 'images/iron_man_airpods.jpg' },
+                        { id: 'spiderman_a', name: 'Spider-Buds', sub: 'Spidey Sense', img: 'images/spiderman_ear_buds.jpg' },
                     ],
                     laptop: [
-                        { id: 'deadpool', name: 'Deadpool', sub: 'Merc with a Mouth', img: '/images/deadpool.jpg' },
-                        { id: 'ironman_l', name: 'Iron Man', sub: 'Invincible Armor', img: '/images/iron_man.jpg' },
-                        { id: 'moonknight', name: 'Moon Knight', sub: 'Fist of Khonshu', img: '/images/moon_knight.jpg' },
-                        { id: 'spiderman_l', name: 'Spider-Man', sub: 'Wall Crawler', img: '/images/spider_man.jpg' },
+                        { id: 'deadpool', name: 'Deadpool', sub: 'Merc with a Mouth', img: 'images/deadpool.jpg' },
+                        { id: 'ironman_l', name: 'Iron Man', sub: 'Invincible Armor', img: 'images/iron_man.jpg' },
+                        { id: 'moonknight', name: 'Moon Knight', sub: 'Fist of Khonshu', img: 'images/moon_knight.jpg' },
+                        { id: 'spiderman_l', name: 'Spider-Man', sub: 'Wall Crawler', img: 'images/spider_man.jpg' },
                     ]
                 }
             },
             {
-                id: 'cars', name: 'Cars', emoji: '/images/theme_cars_new.png',
+                id: 'cars', name: 'Cars', emoji: 'images/theme_cars_new.png',
                 tag: 'Speed & Style', mood: 'Sleek & Dynamic',
                 accent: '#FACC15', accent2: '#3B82F6',
-                img: '/images/theme_cars_new.png?v=1',
+                img: 'images/theme_cars_new.png',
                 config: {
                     colors: ['#e63946', '#457b9d', '#ff9f1c', '#e0e6ed', '#111'],
                     fonts: ['Racing Sans One'],
@@ -1078,30 +1078,30 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 },
                 productDesigns: {
                     phone: [
-                        { id: 'p911', name: 'Porsche 911', sub: 'German Engineering', img: '/images/911.jpg' },
-                        { id: 'bmw_p', name: 'BMW M Series', sub: 'The Ultimate Machine', img: '/images/phone_case_bmw.jpg' },
-                        { id: 'mazda_p', name: 'Mazda Spirit', sub: 'Jinba Ittai', img: '/images/mazda.jpg' },
-                        { id: 'porsche_p', name: 'Porsche GT', sub: 'Track Ready', img: '/images/porsche.jpg' },
+                        { id: 'p911', name: 'Porsche 911', sub: 'German Engineering', img: 'images/911.jpg' },
+                        { id: 'bmw_p', name: 'BMW M Series', sub: 'The Ultimate Machine', img: 'images/phone_case_bmw.jpg' },
+                        { id: 'mazda_p', name: 'Mazda Spirit', sub: 'Jinba Ittai', img: 'images/mazda.jpg' },
+                        { id: 'porsche_p', name: 'Porsche GT', sub: 'Track Ready', img: 'images/porsche.jpg' },
                     ],
                     earbuds: [
-                        { id: 'bmw_e', name: 'BMW Elite', sub: 'M-Performance', img: '/images/bmwwwwwwww.jpg' },
-                        { id: 'cars_e', name: 'Rust-eze', sub: 'Lightning Style', img: '/images/cars.jpg' },
-                        { id: 'f1_e', name: 'Formula 1', sub: 'Grand Prix Vibe', img: '/images/f1.jpg' },
-                        { id: 'gtr_e', name: 'Nissan GTR', sub: 'Godzilla', img: '/images/gtr.jpg' },
+                        { id: 'bmw_e', name: 'BMW Elite', sub: 'M-Performance', img: 'images/bmwwwwwwww.jpg' },
+                        { id: 'cars_e', name: 'Rust-eze', sub: 'Lightning Style', img: 'images/cars.jpg' },
+                        { id: 'f1_e', name: 'Formula 1', sub: 'Grand Prix Vibe', img: 'images/f1.jpg' },
+                        { id: 'gtr_e', name: 'Nissan GTR', sub: 'Godzilla', img: 'images/gtr.jpg' },
                     ],
                     laptop: [
-                        { id: 'bmw_l1', name: 'BMW M4', sub: 'Modern Luxury', img: '/images/another_bmv.jpg' },
-                        { id: 'bmw_l2', name: 'BMW Classic', sub: 'Iconic Kidney Grille', img: '/images/bmw.jpg' },
-                        { id: 'lambo_l', name: 'Lamborghini', sub: 'Raging Bull', img: '/images/lambo.jpg' },
-                        { id: 'porsche_l', name: 'Porsche 911', sub: 'Timeless Silhouette', img: '/images/prosche.jpg' },
+                        { id: 'bmw_l1', name: 'BMW M4', sub: 'Modern Luxury', img: 'images/another_bmv.jpg' },
+                        { id: 'bmw_l2', name: 'BMW Classic', sub: 'Iconic Kidney Grille', img: 'images/bmw.jpg' },
+                        { id: 'lambo_l', name: 'Lamborghini', sub: 'Raging Bull', img: 'images/lambo.jpg' },
+                        { id: 'porsche_l', name: 'Porsche 911', sub: 'Timeless Silhouette', img: 'images/prosche.jpg' },
                     ]
                 }
             },
             {
-                id: 'mandala', name: 'Mandala', emoji: '/images/theme_mandala_new.webp',
+                id: 'mandala', name: 'Mandala', emoji: 'images/theme_mandala_new.webp',
                 tag: 'Sacred Geometry', mood: 'Calm & Intricate',
                 accent: '#10B981', accent2: '#D1FAE5',
-                img: '/images/theme_mandala_new.webp',
+                img: 'images/theme_mandala_new.webp',
                 config: {
                     colors: ['#b8860b', '#556b2f', '#8b0000', '#faf7f2', '#2f4f4f'],
                     fonts: ['Cinzel'],
@@ -1110,30 +1110,30 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 },
                 productDesigns: {
                     phone: [
-                        { id: 'm_e', name: 'Zen Bloom', sub: 'Inner Peace', img: '/images/e.jpg' },
-                        { id: 'm_f', name: 'Sacred Path', sub: 'Harmonious Geometry', img: '/images/f.jpg' },
-                        { id: 'm_g', name: 'Cosmic Wheel', sub: 'Universal Balance', img: '/images/g.png' },
-                        { id: 'm_h', name: 'Luxe Mandala', sub: 'Elegant Patterns', img: '/images/h.jpg' },
+                        { id: 'm_e', name: 'Zen Bloom', sub: 'Inner Peace', img: 'images/e.jpg' },
+                        { id: 'm_f', name: 'Sacred Path', sub: 'Harmonious Geometry', img: 'images/f.jpg' },
+                        { id: 'm_g', name: 'Cosmic Wheel', sub: 'Universal Balance', img: 'images/g.png' },
+                        { id: 'm_h', name: 'Luxe Mandala', sub: 'Elegant Patterns', img: 'images/h.jpg' },
                     ],
                     earbuds: [
-                        { id: 'm_i', name: 'Mandala I', sub: 'Compact Peace', img: '/images/i.jpg' },
-                        { id: 'm_j', name: 'Mandala J', sub: 'Spiritual Bud', img: '/images/j.jpg' },
-                        { id: 'm_k', name: 'Mandala K', sub: 'Radiant Energy', img: '/images/k.jpg' },
-                        { id: 'm_l', name: 'Mandala L', sub: 'Golden Ratio', img: '/images/l.jpg' },
+                        { id: 'm_i', name: 'Mandala I', sub: 'Compact Peace', img: 'images/i.jpg' },
+                        { id: 'm_j', name: 'Mandala J', sub: 'Spiritual Bud', img: 'images/j.jpg' },
+                        { id: 'm_k', name: 'Mandala K', sub: 'Radiant Energy', img: 'images/k.jpg' },
+                        { id: 'm_l', name: 'Mandala L', sub: 'Golden Ratio', img: 'images/l.jpg' },
                     ],
                     laptop: [
-                        { id: 'm_a', name: 'Mandala Alpha', sub: 'Workspace Zen', img: '/images/a.jpg' },
-                        { id: 'm_b', name: 'Mandala Beta', sub: 'Creative Flow', img: '/images/b.jpg' },
-                        { id: 'm_c', name: 'Mandala Gamma', sub: 'Mindful Tech', img: '/images/c.jpg' },
-                        { id: 'm_d', name: 'Mandala Delta', sub: 'Symmetry in Motion', img: '/images/d.jpg' },
+                        { id: 'm_a', name: 'Mandala Alpha', sub: 'Workspace Zen', img: 'images/a.jpg' },
+                        { id: 'm_b', name: 'Mandala Beta', sub: 'Creative Flow', img: 'images/b.jpg' },
+                        { id: 'm_c', name: 'Mandala Gamma', sub: 'Mindful Tech', img: 'images/c.jpg' },
+                        { id: 'm_d', name: 'Mandala Delta', sub: 'Symmetry in Motion', img: 'images/d.jpg' },
                     ]
                 }
             },
             {
-                id: 'floral', name: 'Floral', emoji: '/images/theme_floral_new.jpg',
+                id: 'floral', name: 'Floral', emoji: 'images/theme_floral_new.jpg',
                 tag: 'Nature in Bloom', mood: 'Soft & Romantic',
                 accent: '#F472B6', accent2: '#FDF2F8',
-                img: '/images/theme_floral_new.jpg',
+                img: 'images/theme_floral_new.jpg',
                 config: {
                     colors: ['#ffebd6', '#fbcadd', '#a3e4d7', '#eaddf0', '#fdfaf8'],
                     fonts: ['Dancing Script', 'Outfit'],
@@ -1142,30 +1142,30 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 },
                 productDesigns: {
                     phone: [
-                        { id: 'f_p1', name: 'Spring Dream', sub: 'Fresh Bloom', img: '/images/flowerrrrrrr.jpg' },
-                        { id: 'f_p2', name: 'Summer Meadow', sub: 'Wild Flowers', img: '/images/flowerrrrrrrrrrrrr.jpg' },
-                        { id: 'f_p3', name: 'Petal Soft', sub: 'Delicate Texture', img: '/images/petal_soft.jpg' },
-                        { id: 'f_p4', name: 'Mogra Spirit', sub: 'Traditional Scent', img: '/images/mogra.jpg' },
+                        { id: 'f_p1', name: 'Spring Dream', sub: 'Fresh Bloom', img: 'images/flowerrrrrrr.jpg' },
+                        { id: 'f_p2', name: 'Summer Meadow', sub: 'Wild Flowers', img: 'images/flowerrrrrrrrrrrrr.jpg' },
+                        { id: 'f_p3', name: 'Petal Soft', sub: 'Delicate Texture', img: 'images/petal_soft.jpg' },
+                        { id: 'f_p4', name: 'Mogra Spirit', sub: 'Traditional Scent', img: 'images/mogra.jpg' },
                     ],
                     earbuds: [
-                        { id: 'f_e1', name: 'Floral Nili', sub: 'Blue Blossom', img: '/images/nili.jpg' },
-                        { id: 'f_e2', name: 'Floral Dhili', sub: 'Soft Petals', img: '/images/dhili.jpg' },
-                        { id: 'f_e3', name: 'Floral Pili', sub: 'Yellow Radiance', img: '/images/pili.jpg' },
-                        { id: 'f_e4', name: 'Floral Tili', sub: 'Garden Bud', img: '/images/tili.jpg' },
+                        { id: 'f_e1', name: 'Floral Nili', sub: 'Blue Blossom', img: 'images/nili.jpg' },
+                        { id: 'f_e2', name: 'Floral Dhili', sub: 'Soft Petals', img: 'images/dhili.jpg' },
+                        { id: 'f_e3', name: 'Floral Pili', sub: 'Yellow Radiance', img: 'images/pili.jpg' },
+                        { id: 'f_e4', name: 'Floral Tili', sub: 'Garden Bud', img: 'images/tili.jpg' },
                     ],
                     laptop: [
-                        { id: 'f_l1', name: 'Floral Skin', sub: 'Botanical Beauty', img: '/images/floral.jpg' },
-                        { id: 'f_l2', name: 'Flower Power', sub: 'Vibrant Bloom', img: '/images/flower.jpg' },
-                        { id: 'f_l3', name: 'Lily Essence', sub: 'Elegant White', img: '/images/lily.jpg' },
-                        { id: 'f_l4', name: 'Phool Art', sub: 'Artistic Nature', img: '/images/phool.jpg' },
+                        { id: 'f_l1', name: 'Floral Skin', sub: 'Botanical Beauty', img: 'images/floral.jpg' },
+                        { id: 'f_l2', name: 'Flower Power', sub: 'Vibrant Bloom', img: 'images/flower.jpg' },
+                        { id: 'f_l3', name: 'Lily Essence', sub: 'Elegant White', img: 'images/lily.jpg' },
+                        { id: 'f_l4', name: 'Phool Art', sub: 'Artistic Nature', img: 'images/phool.jpg' },
                     ]
                 }
             },
             {
-                id: 'disney', name: 'Disney', emoji: '/images/theme_disney_new.jpg',
+                id: 'disney', name: 'Disney', emoji: 'images/theme_disney_new.jpg',
                 tag: 'Magic Collection', mood: 'Magical & Whimsical',
                 accent: '#6EE7B7', accent2: '#FDE68A',
-                img: '/images/theme_disney_new.jpg',
+                img: 'images/theme_disney_new.jpg',
                 config: {
                     colors: ['#ff6b81', '#7bed9f', '#eccc68', '#70a1ff', '#ffffff'],
                     fonts: ['Bubblegum Sans'],
@@ -1174,22 +1174,22 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 },
                 productDesigns: {
                     phone: [
-                        { id: 'dumbo_p', name: 'Dumbo', sub: 'Fly High', img: '/images/dumbo.jpg' },
-                        { id: 'elsa_p', name: 'Elsa', sub: 'Let it Go', img: '/images/elsa.jpg' },
-                        { id: 'lionking_p', name: 'Lion King', sub: 'Hakuna Matata', img: '/images/lion_king.jpg' },
-                        { id: 'mickey_p', name: 'Mickey Mouse', sub: 'The Original', img: '/images/mickey_mouse.jpg' },
+                        { id: 'dumbo_p', name: 'Dumbo', sub: 'Fly High', img: 'images/dumbo.jpg' },
+                        { id: 'elsa_p', name: 'Elsa', sub: 'Let it Go', img: 'images/elsa.jpg' },
+                        { id: 'lionking_p', name: 'Lion King', sub: 'Hakuna Matata', img: 'images/lion_king.jpg' },
+                        { id: 'mickey_p', name: 'Mickey Mouse', sub: 'The Original', img: 'images/mickey_mouse.jpg' },
                     ],
                     earbuds: [
-                        { id: 'bear_e', name: 'Winnie', sub: 'Hundred Acre Wood', img: '/images/bear.jpg' },
-                        { id: 'mini_e', name: 'Minnie', sub: 'Polka Dot Style', img: '/images/mini_mouse.jpg' },
-                        { id: 'minni_e', name: 'Classic Minnie', sub: 'Red & White', img: '/images/minni.jpg' },
-                        { id: 'ohana_e', name: 'Ohana v2', sub: 'Stitch & Soul', img: '/images/ohana_v2.jpg' },
+                        { id: 'bear_e', name: 'Winnie', sub: 'Hundred Acre Wood', img: 'images/bear.jpg' },
+                        { id: 'mini_e', name: 'Minnie', sub: 'Polka Dot Style', img: 'images/mini_mouse.jpg' },
+                        { id: 'minni_e', name: 'Classic Minnie', sub: 'Red & White', img: 'images/minni.jpg' },
+                        { id: 'ohana_e', name: 'Ohana v2', sub: 'Stitch & Soul', img: 'images/ohana_v2.jpg' },
                     ],
                     laptop: [
-                        { id: 'deer_l', name: 'Bambi', sub: 'Forest Magic', img: '/images/deer.jpg' },
-                        { id: 'ohana_l', name: 'Stitch', sub: 'Family First', img: '/images/ohana.jpg' },
-                        { id: 'pinaco_l', name: 'Pinocchio', sub: 'Always Be True', img: '/images/pinaco.jpg' },
-                        { id: 'rabbit_l', name: 'Thumper', sub: 'Playful Nature', img: '/images/rabbit.jpg' },
+                        { id: 'deer_l', name: 'Bambi', sub: 'Forest Magic', img: 'images/deer.jpg' },
+                        { id: 'ohana_l', name: 'Stitch', sub: 'Family First', img: 'images/ohana.jpg' },
+                        { id: 'pinaco_l', name: 'Pinocchio', sub: 'Always Be True', img: 'images/pinaco.jpg' },
+                        { id: 'rabbit_l', name: 'Thumper', sub: 'Playful Nature', img: 'images/rabbit.jpg' },
                     ]
                 }
             },
@@ -2144,12 +2144,12 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         /* — HOMEPAGE — */
         /* — SCROLL THEMES DATA — */
         const SCROLL_THEMES = [
-            { id: 'anime', name: 'Anime', emoji: '/images/quiet_sunset_anime.png', img: '/images/quiet_sunset_anime.png', tag: 'Fan Favourites', desc: 'Bring your favourite characters to life. From Naruto to Demon Slayer — wear your fandom with pride.', accent: '#F8C8DC', accent2: '#E6E6FA', bg: 'linear-gradient(135deg,#FFF0F5,#E6E6FA)', designs: [{ name: 'Sakura Vibes', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Thunder Storm', color: '#E6E6FA', icon: '/images/icon_designs.png' }, { name: 'Night Slash', color: '#C9B8E8', icon: '/images/icon_designs.png' }] },
-            { id: 'marvel', name: 'Marvel', emoji: '/images/theme_marvel.png', img: '/images/theme_marvel.png', tag: 'Superhero Edition', desc: 'Embrace your inner hero. Action-packed, bold, and iconic designs that pack a punch.', accent: '#E63946', accent2: '#F1FAEE', bg: 'linear-gradient(135deg,#FFF0F0,#FDE8E8)', designs: [{ name: 'Stark Tech', color: '#E63946', icon: '/images/icon_designs.png' }, { name: 'Web Slinger', color: '#1D4ED8', icon: '/images/icon_designs.png' }, { name: 'Vibranium', color: '#4B5563', icon: '/images/icon_designs.png' }] },
-            { id: 'cars', name: 'Cars', emoji: '/images/theme_cars_new.png', img: '/images/theme_cars_new.png', tag: 'Speed & Style', desc: 'For those who live life in the fast lane. Sleek, bold, built for the road.', accent: '#FFE082', accent2: '#B2EBF2', bg: 'linear-gradient(135deg,#FFFFF0,#E0F7FA)', designs: [{ name: 'Midnight Race', color: '#2C2C4A', icon: '/images/icon_designs.png' }, { name: 'Chrome Dream', color: '#B2EBF2', icon: '/images/icon_designs.png' }, { name: 'Golden Speed', color: '#FFE082', icon: '/images/icon_designs.png' }] },
-            { id: 'mandala', name: 'Mandala', emoji: '/images/theme_mandala_new.webp', img: '/images/theme_mandala_new.webp', tag: 'Sacred Geometry', desc: 'Find your centre. Intricate patterns that radiate calm, balance and sacred beauty.', accent: '#C9B8E8', accent2: '#F8C8DC', bg: 'linear-gradient(135deg,#F3E8FF,#FFF0F5)', designs: [{ name: 'Violet Lotus', color: '#C9B8E8', icon: '/images/icon_designs.png' }, { name: 'Rose Mandala', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Golden Om', color: '#F0D98A', icon: '/images/icon_designs.png' }] },
-            { id: 'floral', name: 'Floral', emoji: '/images/theme_floral_new.jpg', img: '/images/theme_floral_new.jpg', tag: 'Nature in Bloom', desc: 'Let nature decorate your world. Delicate petals, soft palettes — timeless and alive.', accent: '#F8C8DC', accent2: '#A8D5A2', bg: 'linear-gradient(135deg,#FFF0F5,#F0FFF0)', designs: [{ name: 'Petal Soft', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Garden Green', color: '#A8D5A2', icon: '/images/icon_designs.png' }, { name: 'Vintage Rose', color: '#D4688E', icon: '/images/icon_designs.png' }] },
-            { id: 'disney', name: 'Disney', emoji: '/images/theme_disney_new.jpg', img: '/images/theme_disney_new.jpg', tag: 'Magic Collection', desc: 'A little magic in every pocket. Iconic characters, fairytale moments, pure enchantment.', accent: '#81D8D0', accent2: '#FFD700', bg: 'linear-gradient(135deg,#E0FFFF,#FFFACD)', designs: [{ name: 'Castle Glow', color: '#81D8D0', icon: '/images/icon_designs.png' }, { name: 'Stardust', color: '#FFD700', icon: '/images/icon_designs.png' }, { name: 'Rose Fairy', color: '#F8C8DC', icon: '/images/icon_designs.png' }] },
+            { id: 'anime', name: 'Anime', emoji: 'images/quiet_sunset_anime.png', img: 'images/quiet_sunset_anime.png', tag: 'Fan Favourites', desc: 'Bring your favourite characters to life. From Naruto to Demon Slayer — wear your fandom with pride.', accent: '#F8C8DC', accent2: '#E6E6FA', bg: 'linear-gradient(135deg,#FFF0F5,#E6E6FA)', designs: [{ name: 'Sakura Vibes', color: '#F8C8DC', icon: 'images/icon_designs.png' }, { name: 'Thunder Storm', color: '#E6E6FA', icon: 'images/icon_designs.png' }, { name: 'Night Slash', color: '#C9B8E8', icon: 'images/icon_designs.png' }] },
+            { id: 'marvel', name: 'Marvel', emoji: 'images/theme_marvel_new.jpg', img: 'images/theme_marvel_new.jpg', tag: 'Superhero Edition', desc: 'Embrace your inner hero. Action-packed, bold, and iconic designs that pack a punch.', accent: '#E63946', accent2: '#F1FAEE', bg: 'linear-gradient(135deg,#FFF0F0,#FDE8E8)', designs: [{ name: 'Stark Tech', color: '#E63946', icon: 'images/icon_designs.png' }, { name: 'Web Slinger', color: '#1D4ED8', icon: 'images/icon_designs.png' }, { name: 'Vibranium', color: '#4B5563', icon: 'images/icon_designs.png' }] },
+            { id: 'cars', name: 'Cars', emoji: 'images/theme_cars_new.png', img: 'images/theme_cars_new.png', tag: 'Speed & Style', desc: 'For those who live life in the fast lane. Sleek, bold, built for the road.', accent: '#FFE082', accent2: '#B2EBF2', bg: 'linear-gradient(135deg,#FFFFF0,#E0F7FA)', designs: [{ name: 'Midnight Race', color: '#2C2C4A', icon: 'images/icon_designs.png' }, { name: 'Chrome Dream', color: '#B2EBF2', icon: 'images/icon_designs.png' }, { name: 'Golden Speed', color: '#FFE082', icon: 'images/icon_designs.png' }] },
+            { id: 'mandala', name: 'Mandala', emoji: 'images/theme_mandala_new.webp', img: 'images/theme_mandala_new.webp', tag: 'Sacred Geometry', desc: 'Find your centre. Intricate patterns that radiate calm, balance and sacred beauty.', accent: '#C9B8E8', accent2: '#F8C8DC', bg: 'linear-gradient(135deg,#F3E8FF,#FFF0F5)', designs: [{ name: 'Violet Lotus', color: '#C9B8E8', icon: 'images/icon_designs.png' }, { name: 'Rose Mandala', color: '#F8C8DC', icon: 'images/icon_designs.png' }, { name: 'Golden Om', color: '#F0D98A', icon: 'images/icon_designs.png' }] },
+            { id: 'floral', name: 'Floral', emoji: 'images/theme_floral_new.jpg', img: 'images/theme_floral_new.jpg', tag: 'Nature in Bloom', desc: 'Let nature decorate your world. Delicate petals, soft palettes — timeless and alive.', accent: '#F8C8DC', accent2: '#A8D5A2', bg: 'linear-gradient(135deg,#FFF0F5,#F0FFF0)', designs: [{ name: 'Petal Soft', color: '#F8C8DC', icon: 'images/icon_designs.png' }, { name: 'Garden Green', color: '#A8D5A2', icon: 'images/icon_designs.png' }, { name: 'Vintage Rose', color: '#D4688E', icon: 'images/icon_designs.png' }] },
+            { id: 'disney', name: 'Disney', emoji: 'images/theme_disney_new.jpg', img: 'images/theme_disney_new.jpg', tag: 'Magic Collection', desc: 'A little magic in every pocket. Iconic characters, fairytale moments, pure enchantment.', accent: '#81D8D0', accent2: '#FFD700', bg: 'linear-gradient(135deg,#E0FFFF,#FFFACD)', designs: [{ name: 'Castle Glow', color: '#81D8D0', icon: 'images/icon_designs.png' }, { name: 'Stardust', color: '#FFD700', icon: 'images/icon_designs.png' }, { name: 'Rose Fairy', color: '#F8C8DC', icon: 'images/icon_designs.png' }] },
 
         ];
 
@@ -2542,7 +2542,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                                     opacity: vis ? 1 : 0, transform: vis ? 'translateY(0)' : 'translateY(16px)',
                                     transition: 'all 0.6s 0.05s cubic-bezier(.22,.68,0,1.2)'
                                 }}>
-                                    <img loading="lazy" src="/images/icon_easy.png" alt="✦" style={{ width: 13, height: 13 }}  onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_IMG; }} />
+                                    <img loading="lazy" src="images/icon_easy.png" alt="✦" style={{ width: 13, height: 13 }}  onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_IMG; }} />
                                     New Collection 2025
                                 </div>
 
@@ -2691,9 +2691,9 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                             </Reveal>
                             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 32 }}>
                                 {[
-                                    { step: '01', icon: '/images/icon_pro.png', title: 'Pick a Product', desc: 'Choose your basic, standard, or premium canvas.' },
-                                    { step: '02', icon: '/images/icon_designs.png', title: 'Custom Art by You', desc: 'Add text, colors, and memories to make it yours.' },
-                                    { step: '03', icon: '/images/icon_delivery.png', title: 'Delivered to You', desc: 'Premium quality printed and shipped in 3-5 days.' },
+                                    { step: '01', icon: 'images/icon_pro.png', title: 'Pick a Product', desc: 'Choose your basic, standard, or premium canvas.' },
+                                    { step: '02', icon: 'images/icon_designs.png', title: 'Custom Art by You', desc: 'Add text, colors, and memories to make it yours.' },
+                                    { step: '03', icon: 'images/icon_delivery.png', title: 'Delivered to You', desc: 'Premium quality printed and shipped in 3-5 days.' },
                                 ].map((s, i) => <StepCard key={i} s={s} i={i} />)}
                             </div>
                         </div>
@@ -2741,7 +2741,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                                         position: 'absolute', top: -30, right: -40, width: 40, height: 40, 
                                         opacity: 0.15, transform: 'rotate(15deg)', pointerEvents: 'none' 
                                     }}>
-                                        <img loading="lazy" src="/images/logo.jpg" alt="petal" style={{ width: '100%' }}  onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_IMG; }} />
+                                        <img loading="lazy" src="images/logo.jpg" alt="petal" style={{ width: '100%' }}  onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_IMG; }} />
                                     </div>
 
                                     <p style={{ 
@@ -3001,7 +3001,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                         <div className={`mode-card easy fade-up ${selected === 'easy' ? 'selected' : ''}`}
                             style={{ animationDelay: '0.1s' }} onClick={() => { onSelect('easy'); setTimeout(() => onNext('easy'), 300); }}>
                             <div className="mode-icon">
-                                <img src="/images/icon_easy.png" alt="easy" loading="lazy" onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_IMG; }} />
+                                <img src="images/icon_easy.png" alt="easy" loading="lazy" onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_IMG; }} />
                             </div>
                             <div className="mode-label easy">Easy Mode</div>
                             <div className="mode-title">Choose a Theme</div>
@@ -3026,7 +3026,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                             <div className="premium-badge">BEST VALUE ⭐</div>
 
                             <div className="mode-icon">
-                                <img src="/images/icon_pro.png" alt="pro" loading="lazy" onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_IMG; }} />
+                                <img src="images/icon_pro.png" alt="pro" loading="lazy" onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_IMG; }} />
                             </div>
                             <div className="mode-label pro" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                                 Pro Mode {isPremium && <span style={{ fontSize: 14 }}>💎</span>}
@@ -4228,7 +4228,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                             {cart.length === 0 ? (
                                 <div className="cart-empty">
                                     <div className="cart-empty-icon">
-                                        <img loading="lazy" src="/images/icon_designs.png" alt="cart" onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_IMG; }} style={{ width: 64, height: 64, margin: '0 auto', opacity: 0.5 }} />
+                                        <img loading="lazy" src="images/icon_designs.png" alt="cart" onError={(e) => { e.target.onerror = null; e.target.src = FALLBACK_IMG; }} style={{ width: 64, height: 64, margin: '0 auto', opacity: 0.5 }} />
                                     </div>
                                     <p style={{ fontSize: 15, fontWeight: 600, marginBottom: 6, fontFamily: 'Montserrat,sans-serif' }}>Your cart is empty</p>
                                     <p style={{ fontSize: 13, color: 'var(--text-light)', fontWeight: 300 }}>Start designing to add items!</p>
@@ -4578,7 +4578,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                     ? `(${design.manualModel || 'Custom'})` 
                     : `(${selectedModel?.name || 'Standard'})`;
 
-                let previewImage = `/images/product_${prod.id}.png`;
+                let previewImage = `images/product_${prod.id}.png`;
                 
                 if (mode === 'easy' && theme?.icon) {
                     previewImage = theme.icon;
