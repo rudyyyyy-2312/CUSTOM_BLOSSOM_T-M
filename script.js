@@ -208,9 +208,9 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
             ],
         };
         const THEMES = [
-            { id: 'anime', name: 'Anime', icon: 'quiet_sunset_anime.png', colors: ['#FF6B6B', '#4ECDC4', '#FFE66D'], tag: 'Fan Favourites', mood: 'Bold & Expressive' },
+            { id: 'anime', name: 'Anime', icon: '/images/quiet_sunset_anime.png', colors: ['#FF6B6B', '#4ECDC4', '#FFE66D'], tag: 'Fan Favourites', mood: 'Bold & Expressive' },
             { id: 'marvel', name: 'Marvel', icon: '/images/theme_marvel_new.jpg', colors: ['#E63946', '#F1FAEE', '#A8DADC'], tag: 'Superhero Edition', mood: 'Bold & Powerful' },
-            { id: 'cars', name: 'Cars', icon: 'theme_cars_new.png', colors: ['#2B2D42', '#8D99AE', '#EDF2F4'], tag: 'Speed & Style', mood: 'Sleek & Dynamic' },
+            { id: 'cars', name: 'Cars', icon: '/images/theme_cars_new.png', colors: ['#2B2D42', '#8D99AE', '#EDF2F4'], tag: 'Speed & Style', mood: 'Sleek & Dynamic' },
             { id: 'mandala', name: 'Mandala', icon: '/images/theme_mandala_new.webp', colors: ['#606C38', '#283618', '#FEFAE0'], tag: 'Sacred Geometry', mood: 'Calm & Intricate' },
             { id: 'floral', name: 'Floral', icon: '/images/theme_floral_new.jpg', colors: ['#FFC8DD', '#FFAFCC', '#BDE0FE'], tag: 'Nature in Bloom', mood: 'Soft & Romantic' },
             { id: 'disney', name: 'Disney', icon: '/images/theme_disney_new.jpg', colors: ['#B7094C', '#A01A58', '#892B64'], tag: 'Magic Collection', mood: 'Enchanting & Pure' },
@@ -1002,7 +1002,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         /* ——— THEMES GALLERY PAGE ——— */
         const THEME_CATALOG = [
             {
-                id: 'anime', name: 'Anime', emoji: 'quiet_sunset_anime.png',
+                id: 'anime', name: 'Anime', emoji: '/images/quiet_sunset_anime.png',
                 tag: 'Fan Favourites', mood: 'Bold & Expressive',
                 accent: '#C084FC', accent2: '#F9A8D4',
                 img: '/images/quiet_sunset_anime.png?v=1',
@@ -1066,7 +1066,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 }
             },
             {
-                id: 'cars', name: 'Cars', emoji: 'theme_cars_new.png',
+                id: 'cars', name: 'Cars', emoji: '/images/theme_cars_new.png',
                 tag: 'Speed & Style', mood: 'Sleek & Dynamic',
                 accent: '#FACC15', accent2: '#3B82F6',
                 img: '/images/theme_cars_new.png?v=1',
@@ -2144,9 +2144,9 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         /* — HOMEPAGE — */
         /* — SCROLL THEMES DATA — */
         const SCROLL_THEMES = [
-            { id: 'anime', name: 'Anime', emoji: 'quiet_sunset_anime.png', img: 'quiet_sunset_anime.png', tag: 'Fan Favourites', desc: 'Bring your favourite characters to life. From Naruto to Demon Slayer — wear your fandom with pride.', accent: '#F8C8DC', accent2: '#E6E6FA', bg: 'linear-gradient(135deg,#FFF0F5,#E6E6FA)', designs: [{ name: 'Sakura Vibes', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Thunder Storm', color: '#E6E6FA', icon: '/images/icon_designs.png' }, { name: 'Night Slash', color: '#C9B8E8', icon: '/images/icon_designs.png' }] },
+            { id: 'anime', name: 'Anime', emoji: '/images/quiet_sunset_anime.png', img: '/images/quiet_sunset_anime.png', tag: 'Fan Favourites', desc: 'Bring your favourite characters to life. From Naruto to Demon Slayer — wear your fandom with pride.', accent: '#F8C8DC', accent2: '#E6E6FA', bg: 'linear-gradient(135deg,#FFF0F5,#E6E6FA)', designs: [{ name: 'Sakura Vibes', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Thunder Storm', color: '#E6E6FA', icon: '/images/icon_designs.png' }, { name: 'Night Slash', color: '#C9B8E8', icon: '/images/icon_designs.png' }] },
             { id: 'marvel', name: 'Marvel', emoji: '/images/theme_marvel_new.jpg', img: '/images/theme_marvel_new.jpg', tag: 'Sacred Geometry', desc: 'Find your centre. Intricate patterns that radiate calm, balance and sacred beauty.', accent: '#C9B8E8', accent2: '#F8C8DC', bg: 'linear-gradient(135deg,#F3E8FF,#FFF0F5)', designs: [{ name: 'Violet Lotus', color: '#C9B8E8', icon: '/images/icon_designs.png' }, { name: 'Rose Mandala', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Golden Om', color: '#F0D98A', icon: '/images/icon_designs.png' }] },
-            { id: 'cars', name: 'Cars', emoji: '/images/theme_cars.png', img: '/images/theme_cars.png', tag: 'Speed & Style', desc: 'For those who live life in the fast lane. Sleek, bold, built for the road.', accent: '#FFE082', accent2: '#B2EBF2', bg: 'linear-gradient(135deg,#FFFFF0,#E0F7FA)', designs: [{ name: 'Midnight Race', color: '#2C2C4A', icon: '/images/icon_designs.png' }, { name: 'Chrome Dream', color: '#B2EBF2', icon: '/images/icon_designs.png' }, { name: 'Golden Speed', color: '#FFE082', icon: '/images/icon_designs.png' }] },
+            { id: 'cars', name: 'Cars', emoji: '/images/theme_cars_new.png', img: '/images/theme_cars_new.png', tag: 'Speed & Style', desc: 'For those who live life in the fast lane. Sleek, bold, built for the road.', accent: '#FFE082', accent2: '#B2EBF2', bg: 'linear-gradient(135deg,#FFFFF0,#E0F7FA)', designs: [{ name: 'Midnight Race', color: '#2C2C4A', icon: '/images/icon_designs.png' }, { name: 'Chrome Dream', color: '#B2EBF2', icon: '/images/icon_designs.png' }, { name: 'Golden Speed', color: '#FFE082', icon: '/images/icon_designs.png' }] },
             { id: 'mandala', name: 'Mandala', emoji: '/images/theme_mandala_new.webp', img: '/images/theme_mandala_new.webp', tag: 'Sacred Geometry', desc: 'Find your centre. Intricate patterns that radiate calm, balance and sacred beauty.', accent: '#C9B8E8', accent2: '#F8C8DC', bg: 'linear-gradient(135deg,#F3E8FF,#FFF0F5)', designs: [{ name: 'Violet Lotus', color: '#C9B8E8', icon: '/images/icon_designs.png' }, { name: 'Rose Mandala', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Golden Om', color: '#F0D98A', icon: '/images/icon_designs.png' }] },
             { id: 'floral', name: 'Floral', emoji: '/images/theme_floral_new.jpg', img: '/images/theme_floral_new.jpg', tag: 'Nature in Bloom', desc: 'Let nature decorate your world. Delicate petals, soft palettes — timeless and alive.', accent: '#F8C8DC', accent2: '#A8D5A2', bg: 'linear-gradient(135deg,#FFF0F5,#F0FFF0)', designs: [{ name: 'Petal Soft', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Garden Green', color: '#A8D5A2', icon: '/images/icon_designs.png' }, { name: 'Vintage Rose', color: '#D4688E', icon: '/images/icon_designs.png' }] },
             { id: 'disney', name: 'Disney', emoji: '/images/theme_disney_new.jpg', img: '/images/theme_disney_new.jpg', tag: 'Magic Collection', desc: 'A little magic in every pocket. Iconic characters, fairytale moments, pure enchantment.', accent: '#81D8D0', accent2: '#FFD700', bg: 'linear-gradient(135deg,#E0FFFF,#FFFACD)', designs: [{ name: 'Castle Glow', color: '#81D8D0', icon: '/images/icon_designs.png' }, { name: 'Stardust', color: '#FFD700', icon: '/images/icon_designs.png' }, { name: 'Rose Fairy', color: '#F8C8DC', icon: '/images/icon_designs.png' }] },
@@ -4773,4 +4773,3 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
-
