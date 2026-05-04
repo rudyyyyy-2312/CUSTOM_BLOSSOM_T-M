@@ -1002,7 +1002,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         /* ——— THEMES GALLERY PAGE ——— */
         const THEME_CATALOG = [
             {
-                id: 'anime', name: 'Anime', emoji: '/images/quiet_sunset_anime.png?v=1',
+                id: 'anime', name: 'Anime', emoji: 'quiet_sunset_anime.png',
                 tag: 'Fan Favourites', mood: 'Bold & Expressive',
                 accent: '#C084FC', accent2: '#F9A8D4',
                 img: '/images/quiet_sunset_anime.png?v=1',
@@ -1066,7 +1066,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 }
             },
             {
-                id: 'cars', name: 'Cars', emoji: '/images/theme_cars_new.png?v=1',
+                id: 'cars', name: 'Cars', emoji: 'theme_cars_new.png',
                 tag: 'Speed & Style', mood: 'Sleek & Dynamic',
                 accent: '#FACC15', accent2: '#3B82F6',
                 img: '/images/theme_cars_new.png?v=1',
