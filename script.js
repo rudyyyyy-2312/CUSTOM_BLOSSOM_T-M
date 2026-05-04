@@ -209,7 +209,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         };
         const THEMES = [
             { id: 'anime', name: 'Anime', icon: '/images/quiet_sunset_anime.png', colors: ['#FF6B6B', '#4ECDC4', '#FFE66D'], tag: 'Fan Favourites', mood: 'Bold & Expressive' },
-            { id: 'marvel', name: 'Marvel', icon: '/images/theme_marvel.png', colors: ['#E63946', '#F1FAEE', '#A8DADC'], tag: 'Superhero Edition', mood: 'Bold & Powerful' },
+            { id: 'marvel', name: 'Marvel', icon: '/images/theme_marvel_new.jpg', colors: ['#E63946', '#F1FAEE', '#A8DADC'], tag: 'Superhero Edition', mood: 'Bold & Powerful' },
             { id: 'cars', name: 'Cars', icon: '/images/theme_cars_new.png', colors: ['#2B2D42', '#8D99AE', '#EDF2F4'], tag: 'Speed & Style', mood: 'Sleek & Dynamic' },
             { id: 'mandala', name: 'Mandala', icon: '/images/theme_mandala_new.webp', colors: ['#606C38', '#283618', '#FEFAE0'], tag: 'Sacred Geometry', mood: 'Calm & Intricate' },
             { id: 'floral', name: 'Floral', icon: '/images/theme_floral_new.jpg', colors: ['#FFC8DD', '#FFAFCC', '#BDE0FE'], tag: 'Nature in Bloom', mood: 'Soft & Romantic' },
@@ -1034,10 +1034,10 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                 }
             },
             {
-                id: 'marvel', name: 'Marvel', emoji: '/images/theme_marvel.png?v=1',
+                id: 'marvel', name: 'Marvel', emoji: '/images/theme_marvel_new.jpg?v=1',
                 tag: 'Superhero Edition', mood: 'Bold & Powerful',
                 accent: '#E63946', accent2: '#F1FAEE',
-                img: '/images/theme_marvel.png?v=1',
+                img: '/images/theme_marvel_new.jpg?v=1',
                 config: {
                     colors: ['#4a0000', '#ed1d24', '#ffd700', '#000000', '#ffffff'],
                     fonts: ['Anton', 'Bangers'],
@@ -1053,7 +1053,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                     ],
                     earbuds: [
                         { id: 'avengers', name: 'Avengers', sub: 'Earth\'s Mightiest', img: '/images/avengers.jpg' },
-                        { id: 'marvel_lg', name: 'Marvel Legacy', sub: 'Classic Comic', img: '/images/marvel_legacy.jpg' },
+                        { id: 'marvel_lg', name: 'Marvel Legacy', sub: 'Classic Comic', img: '/images/download.jpg' },
                         { id: 'ironman_a', name: 'Iron ManPods', sub: 'Arc Reactor', img: '/images/iron_man_airpods.jpg' },
                         { id: 'spiderman_a', name: 'Spider-Buds', sub: 'Spidey Sense', img: '/images/spiderman_ear_buds.jpg' },
                     ],
@@ -2145,7 +2145,7 @@ const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         /* — SCROLL THEMES DATA — */
         const SCROLL_THEMES = [
             { id: 'anime', name: 'Anime', emoji: '/images/quiet_sunset_anime.png', img: '/images/quiet_sunset_anime.png', tag: 'Fan Favourites', desc: 'Bring your favourite characters to life. From Naruto to Demon Slayer — wear your fandom with pride.', accent: '#F8C8DC', accent2: '#E6E6FA', bg: 'linear-gradient(135deg,#FFF0F5,#E6E6FA)', designs: [{ name: 'Sakura Vibes', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Thunder Storm', color: '#E6E6FA', icon: '/images/icon_designs.png' }, { name: 'Night Slash', color: '#C9B8E8', icon: '/images/icon_designs.png' }] },
-            { id: 'marvel', name: 'Marvel', emoji: '/images/theme_marvel.png', img: '/images/theme_marvel.png', tag: 'Superhero Edition', desc: 'Embrace your inner hero. Action-packed, bold, and iconic designs that pack a punch.', accent: '#E63946', accent2: '#F1FAEE', bg: 'linear-gradient(135deg,#FFF0F0,#FDE8E8)', designs: [{ name: 'Stark Tech', color: '#E63946', icon: '/images/icon_designs.png' }, { name: 'Web Slinger', color: '#1D4ED8', icon: '/images/icon_designs.png' }, { name: 'Vibranium', color: '#4B5563', icon: '/images/icon_designs.png' }] },
+            { id: 'marvel', name: 'Marvel', emoji: '/images/theme_marvel_new.jpg', img: '/images/theme_marvel_new.jpg', tag: 'Sacred Geometry', desc: 'Find your centre. Intricate patterns that radiate calm, balance and sacred beauty.', accent: '#C9B8E8', accent2: '#F8C8DC', bg: 'linear-gradient(135deg,#F3E8FF,#FFF0F5)', designs: [{ name: 'Violet Lotus', color: '#C9B8E8', icon: '/images/icon_designs.png' }, { name: 'Rose Mandala', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Golden Om', color: '#F0D98A', icon: '/images/icon_designs.png' }] },
             { id: 'cars', name: 'Cars', emoji: '/images/theme_cars_new.png', img: '/images/theme_cars_new.png', tag: 'Speed & Style', desc: 'For those who live life in the fast lane. Sleek, bold, built for the road.', accent: '#FFE082', accent2: '#B2EBF2', bg: 'linear-gradient(135deg,#FFFFF0,#E0F7FA)', designs: [{ name: 'Midnight Race', color: '#2C2C4A', icon: '/images/icon_designs.png' }, { name: 'Chrome Dream', color: '#B2EBF2', icon: '/images/icon_designs.png' }, { name: 'Golden Speed', color: '#FFE082', icon: '/images/icon_designs.png' }] },
             { id: 'mandala', name: 'Mandala', emoji: '/images/theme_mandala_new.webp', img: '/images/theme_mandala_new.webp', tag: 'Sacred Geometry', desc: 'Find your centre. Intricate patterns that radiate calm, balance and sacred beauty.', accent: '#C9B8E8', accent2: '#F8C8DC', bg: 'linear-gradient(135deg,#F3E8FF,#FFF0F5)', designs: [{ name: 'Violet Lotus', color: '#C9B8E8', icon: '/images/icon_designs.png' }, { name: 'Rose Mandala', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Golden Om', color: '#F0D98A', icon: '/images/icon_designs.png' }] },
             { id: 'floral', name: 'Floral', emoji: '/images/theme_floral_new.jpg', img: '/images/theme_floral_new.jpg', tag: 'Nature in Bloom', desc: 'Let nature decorate your world. Delicate petals, soft palettes — timeless and alive.', accent: '#F8C8DC', accent2: '#A8D5A2', bg: 'linear-gradient(135deg,#FFF0F5,#F0FFF0)', designs: [{ name: 'Petal Soft', color: '#F8C8DC', icon: '/images/icon_designs.png' }, { name: 'Garden Green', color: '#A8D5A2', icon: '/images/icon_designs.png' }, { name: 'Vintage Rose', color: '#D4688E', icon: '/images/icon_designs.png' }] },
